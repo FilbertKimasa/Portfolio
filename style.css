@@ -29,7 +29,7 @@
 }
 
 .intro-content {
-  color: #ffffff;
+  color: #fff;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -76,7 +76,7 @@
 #logo {
   text-decoration: none;
   margin-left: 2px;
-  color: #ffffff;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   width: 80px;
   height: auto;
