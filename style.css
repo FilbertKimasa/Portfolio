@@ -1,0 +1,91 @@
+* {
+  margin: 0.01%;
+  padding: 0.01%;
+  box-sizing: border-box;
+}
+
+.header-class {
+  background-color: #3c3a39;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  width: 100%;
+  margin-left: 0%;
+  padding-inline-end: 8%;
+  margin-right: 0%;
+}
+
+.greatings {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.intro-content {
+  color: #fff5e1;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 5px;
+}
+
+.intro-heading {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 2px;
+  padding-bottom: 42%;
+  background-color: #1c1a19;
+  background-image: url(./images/Group.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: right bottom;
+}
+
+.social-media_icons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 10px;
+  list-style-type: none;
+  margin-left: 0.1%;
+  padding-top: 15px;
+}
+
+#logo {
+  text-decoration: none;
+  margin-left: 2px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 80px;
+  height: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+#bars {
+  margin-right: 10%;
+}
