@@ -29,7 +29,7 @@
 }
 
 .intro-content {
-  color: #fff5e1;
+  color: #ffffff;
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -60,6 +60,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: right bottom;
+  margin-top: -1px;
 }
 
 .social-media_icons {
