@@ -42,7 +42,7 @@
 .intro-heading {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  color: white;
+  color: #fff5e1;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -76,7 +76,7 @@
 #logo {
   text-decoration: none;
   margin-left: 2px;
-  color: white;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   width: 80px;
   height: auto;
