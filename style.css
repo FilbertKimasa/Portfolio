@@ -318,14 +318,13 @@
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
+  padding: 10px;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #fff;
   border: 1px solid #ff6b00;
-  margin-top: 8%;
-  padding: 11px 12px;
+  margin-top: 25px;
 }
 
 #skills-separator {
@@ -335,7 +334,7 @@
   background: #fff;
 }
 
-.skills-div-container {
+.skills-list-container {
   width: 100%;
   padding-top: 27%;
   height: auto;
@@ -346,7 +345,7 @@
   align-items: center;
 }
 
-.skill-div-bock {
+.skill-list-bock {
   width: 100%;
 }
 
@@ -372,6 +371,7 @@
   text-align: left;
   text-align: center;
   margin-top: 20px;
+  width: 100%;
 }
 
 #skill-title-1 {
