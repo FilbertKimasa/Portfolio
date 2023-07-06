@@ -368,23 +368,19 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
-  color: #ffffff;
+  color: #fff;
   text-align: left;
   text-align: center;
   margin-top: 20px;
 }
 
 #skill-title-1 {
-  font-family: InaiMathi;
+  font-family: "InaiMathi", sans-serif;
 }
 
-#skill-title-2 {
-  font-family: Inter;
-}
-
+#skill-title-2,
 #skill-title-3 {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
 }
 
 #rectangle-icon-1 {
@@ -403,6 +399,7 @@
 .see-project-btn:hover {
   background-color: #ff3c00;
 }
+
 .btn-resume:hover {
   background-color: #ff3c00;
 }
