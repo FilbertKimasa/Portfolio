@@ -397,49 +397,56 @@
 }
 
 .see-project-btn:active {
-  background-color: #ff3c00;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .btn-resume:active {
-  background-color: #ff3c00;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .project-btn:active {
-  background-color: rgb(126, 126, 126);
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .btn-see-project:active {
-  background-color: #ff3c00;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .recent-button:active {
-  background-color: rgb(126, 126, 126);
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
-/* a:active {
-  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-  transform: translateY(4px);
-} */
-
 .see-project-btn:hover {
-  background-color: #d2ada2;
-  border: 1px solid #ff3c00;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .btn-resume:hover {
-  background-color: #d2ada2;
-  border: 1px solid #ff3c00;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .project-btn:hover {
-  background-color: rgba(220, 213, 213, 0.854);
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .btn-see-project:hover {
-  background-color: #d2ada2;
-  border: 1px solid #ff3c00;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .recent-button:hover {
-  background-color: rgba(220, 213, 213, 0.854);
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
