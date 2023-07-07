@@ -90,3 +90,363 @@
 #bars {
   margin-right: 10%;
 }
+
+.recent-works {
+  padding: 120px 24px;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.section-title {
+  height: 83px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  text-align: center;
+}
+
+.recent-image {
+  width: 100%;
+  height: auto;
+  padding-top: 90px;
+  margin: auto;
+}
+
+.recent {
+  height: auto;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  align-items: center;
+  color: #091e42;
+}
+
+.recent-project-details {
+  height: 147px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.recent-buttons-container {
+  display: flex;
+  flex-direction: row;
+  grid-column-gap: 10px;
+  margin: 0 auto 0 0;
+  list-style: none;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/Img\ Placeholder-2.png);
+  margin-top: 22px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.project-title {
+  width: 100%;
+  height: 81px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  padding: 70px 5%;
+}
+
+.project-details {
+  width: 100%;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 5% 5%;
+}
+
+.project-technology {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5% 5%;
+  margin: 0 auto 0 0;
+  list-style: none;
+}
+
+.recent-button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  align-items: center;
+  padding: 10px 12px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  text-decoration: none;
+}
+
+.btn-see-project {
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+.project-btn {
+  text-align: center;
+  padding: 10px 12px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-btn-1 {
+  width: 67px;
+}
+
+.project-btn-2 {
+  width: 95px;
+}
+
+.project-btn-3 {
+  width: 61px;
+}
+
+.see-project-btn {
+  width: 100%;
+  height: 48px;
+  margin-top: 13px;
+  background: #ff6b00;
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: #1c1a19;
+  padding-bottom: 10%;
+}
+
+.about-me-intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #1c1a19;
+  padding: 120px 24px;
+  background-image: url(./images/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 40%;
+}
+
+.about-me-title {
+  width: 100%;
+  height: auto;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.about-me-details {
+  width: 100%;
+  padding-top: 5%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.btn-resume {
+  align-items: center;
+  width: 156px;
+  height: 48px;
+  text-decoration: none;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #ff6b00;
+  margin-top: 25px;
+}
+
+#skills-separator {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 8%;
+  background: #fff;
+}
+
+.skills-list-container {
+  width: 100%;
+  padding-top: 27%;
+  height: auto;
+  background: #1c1a19;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-list-bock {
+  width: 100%;
+}
+
+.skills-list li {
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 194%;
+  align-items: center;
+  color: #fff;
+  margin-top: 17px;
+}
+
+.skill-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff;
+  text-align: left;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#skill-title-1 {
+  font-family: "InaiMathi", sans-serif;
+}
+
+#skill-title-2,
+#skill-title-3 {
+  font-family: "Inter", sans-serif;
+}
+
+#rectangle-icon-1 {
+  transform: rotate(-45deg);
+  margin-right: 15px;
+}
+
+#rectangle-icon-2 {
+  margin-right: 15px;
+}
+
+#circle-icon {
+  margin-right: 15px;
+}
+
+.see-project-btn:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.btn-resume:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.project-btn:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.btn-see-project:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.recent-button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.see-project-btn:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.btn-resume:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.project-btn:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.btn-see-project:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.recent-button:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
