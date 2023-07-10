@@ -140,11 +140,15 @@
 }
 
 .recent-buttons-container {
-  display: flex;
+  
   flex-direction: row;
   grid-column-gap: 10px;
   margin: 0 auto 0 0;
   list-style: none;
+}
+.recent-buttons-container li {
+  float: left;
+  padding-left: 10px;
 }
 
 .project {
