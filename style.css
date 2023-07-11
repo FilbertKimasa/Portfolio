@@ -450,3 +450,10 @@
   border: 1px solid #f55800;
   color: #f55800;
 }
+
+.contact-section {
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
