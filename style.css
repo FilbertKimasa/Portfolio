@@ -469,3 +469,17 @@
   padding: 0px 3px 40px 3px;
 }
 
+contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-input {
+  height: 48px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
+}
