@@ -396,32 +396,17 @@
   margin-right: 15px;
 }
 
-.see-project-btn:active {
+.active-btn-effect:active {
   background-color: #e05304;
   color: #f4f1f0;
 }
 
-.btn-resume:active {
-  background-color: #e05304;
-  color: #f4f1f0;
+.hover-btn-effect:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
-
-.project-btn:active {
-  background-color: #e05304;
-  color: #f4f1f0;
-}
-
-.btn-see-project:active {
-  background-color: #e05304;
-  color: #f4f1f0;
-}
-
-.recent-button:active {
-  background-color: #e05304;
-  color: #f4f1f0;
-}
-
-.see-project-btn:hover {
+/* .see-project-btn:hover {
   background-color: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
@@ -449,7 +434,7 @@
   background-color: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
-}
+} */
 
 .contact-section {
   padding: 80px 24px;
@@ -532,6 +517,8 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  outline: none;
+  border: 1px solid #ff6b00;
 }
 
 .btn-get-in-touch {
@@ -580,9 +567,4 @@
   background-color: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
-}
-
-.btn-get-in-touch:active {
-  background-color: #e05304;
-  color: #f4f1f0;
 }
