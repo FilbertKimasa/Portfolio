@@ -464,10 +464,9 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: center;
   color: #172b4d;
-  padding: 0px 3px 40px 3px;
+  padding: 0.1px 3px 40px 3px;
 }
 
 .contact-form {
@@ -498,7 +497,6 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #979493;
   padding-left: 16px;
@@ -512,10 +510,8 @@
   padding-left: 12px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  font-style: italic;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -538,6 +534,7 @@
   font-weight: 400;
   line-height: 24px;
 }
+
 .btn-get-in-touch {
   align-items: center;
   width: 131px;
@@ -555,7 +552,7 @@
 }
 
 .footer-class {
-  padding: 0px 24px;
+  padding: 0.1px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -566,11 +563,11 @@
   flex-direction: row;
   list-style: none;
   gap: 18px;
-  padding: 30px 0px;
+  padding: 30px 0.1px;
 }
 
 #botom-line {
-  margin: 20px 0px 20px;
+  margin: 20px 0.1px 20px;
   width: 134px;
   height: 5px;
   left: 120px;
@@ -579,6 +576,7 @@
 #footer-separator {
   color: #dfe1e6;
 }
+
 .btn-get-in-touch:hover {
   background-color: #fff5e1;
   border: 1px solid #f55800;
