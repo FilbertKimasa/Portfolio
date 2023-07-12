@@ -493,7 +493,7 @@
   border: none;
 }
 
-::placeholder {
+.form-input::placeholder {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -501,19 +501,29 @@
   letter-spacing: 0em;
   text-align: left;
   color: #979493;
-  padding-left: 20px;
-  padding-top: 17px;
+  padding-left: 16px;
+  padding-top: 15px;
 }
 
 #text-comment::placeholder {
   font-style: italic;
   color: #3c3a39;
+  padding-top: 12px;
+  padding-left: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-input:focus {
+.form-input:focus {
   outline: none;
   border-bottom: 1px solid #ff6b00;
-  padding: 0px 10px;
+  padding-left: 16px;
+  padding-top: 15px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -521,7 +531,8 @@ input:focus {
 }
 
 #text-comment:focus {
-  padding: 10px;
+  padding-top: 12px;
+  padding-left: 12px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
