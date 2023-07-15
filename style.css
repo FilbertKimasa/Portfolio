@@ -931,4 +931,12 @@
     line-height: 52px;
     text-align: left;
   }
+
+  .project-block:hover {
+    transform: scale(1.05);
+  }
+
+  .social-media_icons li:hover {
+    transform: scale(1.3);
+  }
 }
