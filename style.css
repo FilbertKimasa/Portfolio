@@ -552,7 +552,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1350px) {
   #nav-bar {
     display: none;
   }
@@ -603,8 +603,8 @@
     background-image: url(images/Illustration-header.png);
     background-position: top right;
     background-size: 40% auto;
-    padding-top: 60px;
-    padding-bottom: 20%;
+    padding-top: 40px;
+    padding-bottom: 19%;
   }
 
   .social-media_icons {
@@ -721,7 +721,7 @@
     background-repeat: no-repeat;
     background-size: 369px auto;
     width: 369px;
-    height: auto;
+    height: 435px;
     border: 2px solid #091e42;
   }
 
@@ -733,7 +733,7 @@
     background-repeat: no-repeat;
     background-size: 369px auto;
     width: 369px;
-    height: auto;
+    height: 435px;
   }
 
   .project-3 {
@@ -744,7 +744,7 @@
     background-repeat: no-repeat;
     background-size: 369px auto;
     width: 369px;
-    height: auto;
+    height: 435px;
   }
 
   .project-4 {
@@ -755,11 +755,12 @@
     background-repeat: no-repeat;
     background-size: 369px auto;
     width: 369px;
-    height: auto;
+    height: 435px;
   }
 
   .see-project-btn {
-    margin-top: 390px;
+    margin-top: 388px;
+    width: 100%;
   }
 
   .project-title {
