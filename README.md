@@ -11,6 +11,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -44,6 +45,12 @@
 
 - **[Display my skills]**
 - **[Showcase the projects I have done]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://filbertkimasa.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +134,7 @@ If you like this project please give it a star and follow me on github linkedIn 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my Microverse studying partners and my standup team for helping and encouraging me to do this project
+I would like to thank my Microverse studying partners and my standup team for helping and encouraging me to do this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
