@@ -52,6 +52,8 @@
 
 - [Live Demo Link](https://filbertkimasa.github.io/Portfolio/)
 
+- [Project demo video Link](https://www.loom.com/share/b0ce3808b81d472d8ab2cf8a5b0d3040)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
