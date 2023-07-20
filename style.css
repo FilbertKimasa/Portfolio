@@ -554,10 +554,12 @@
 
 .project-block:hover {
   transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .social-media_icons li:hover {
   transform: scale(1.3);
+  transition: 0.5s;
 }
 
 .nav-link::after {
