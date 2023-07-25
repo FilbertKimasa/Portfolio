@@ -583,7 +583,7 @@
     display: none;
   }
 
-  #desktop-navbar {
+  #navbar {
     display: block;
   }
 
@@ -980,7 +980,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* transform: translateX(100%); */
     transition: transform 0.5s ease-in;
     list-style: none;
     transform: translate(-100%);
@@ -1013,5 +1012,9 @@
     margin-top: 10%;
     margin-left: 80%;
     margin-bottom: 20px;
+  }
+
+  .nav-link::after {
+    display: none;
   }
 }
