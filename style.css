@@ -965,14 +965,6 @@
     overflow-x: hidden;
   }
 
-  .nav-active {
-    transform: translate(100%);
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
   .menu {
     position: absolute;
     right: 0;
