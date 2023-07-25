@@ -87,7 +87,7 @@
   text-align: center;
 }
 
-#bars {
+.bars {
   margin-right: 10%;
 }
 
@@ -539,7 +539,7 @@
   color: #dfe1e6;
 }
 
-#desktop-navbar {
+.menu {
   display: none;
 }
 
@@ -578,7 +578,8 @@
 }
 
 @media (min-width: 1350px) {
-  #nav-bar {
+  .bars,
+  .fa-close {
     display: none;
   }
 
