@@ -964,12 +964,15 @@
   body {
     overflow-x: hidden;
   }
+
   .nav-active {
     transform: translate(100%);
   }
+
   body {
     overflow-x: hidden;
   }
+
   .menu {
     position: absolute;
     right: 0;
@@ -996,16 +999,20 @@
     letter-spacing: 0em;
     text-align: left;
   }
+
   .nav-link {
     text-decoration: none;
     color: #fff5e1;
   }
+
   .menu li:last-child {
     display: none;
   }
+
   .nav-active {
     transform: translate(0%);
   }
+
   .fa-close {
     width: 24px;
     height: 24px;
