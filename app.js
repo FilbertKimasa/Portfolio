@@ -85,7 +85,7 @@ if (portfolio) {
   mostRecentProjectWrapper.classList.add('most-recent-project-wraper');
   descktopProjectsWrapperDiv.classList.add(
     'desktop-recent-project-wraper',
-    'project-block'
+    'project-block',
   );
 
   img.setAttribute('src', `${recentProjects[0].image}`);
