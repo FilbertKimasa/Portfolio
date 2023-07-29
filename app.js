@@ -24,7 +24,6 @@ const projectsWrapperDiv = document.createElement('div');
 const mostRecentProjectWrapper = document.createElement('div');
 const descktopProjectsWrapperDiv = document.createElement('div');
 let projectDiv;
-let closeModalBtn;
 
 const recentProjects = [
   {
@@ -304,6 +303,7 @@ const modal = document.querySelector('.project-details-popup');
 const overlay = document.querySelector('.overlay');
 const openModalBtn = document.querySelectorAll('.pop');
 
+overlay.classList.add('hidden');
 const popupContainer = document.getElementById('project-details-popup');
 popupContainer.innerHTML = ` <div class="project-header">
         <h3 class="project-title-popup">Multi-Post Stories</h3>
