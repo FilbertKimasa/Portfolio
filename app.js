@@ -354,7 +354,7 @@ popupContainer.innerHTML = ` <div class="project-header">
             remaining essent
           </p>
           <ul class="popup-project-buttons">
-            <li>
+            <li class="first-child">
               <a href=""
                 >See live<img
                   src="images/live-Icon.png"
@@ -362,7 +362,7 @@ popupContainer.innerHTML = ` <div class="project-header">
                   class="popup-project-button-icon-1"
               /></a>
             </li>
-            <li>
+            <li class="last-child">
               <a href=""
                 >See source<img
                   src="images/Icon -GitHub-white.png"

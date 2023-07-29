@@ -582,14 +582,12 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 2%;
-  /* margin-top: 1%; */
   background-color: #fff;
   width: 90%;
   position: fixed;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 1px solid red;
   max-height: 95vh;
   z-index: 3;
   justify-content: center;
@@ -611,7 +609,6 @@
   display: grid;
   grid-auto-flow: column;
   width: 100%;
-  /* gap: 5%; */
   margin-right: auto;
   margin-top: 5%;
 }
@@ -680,18 +677,11 @@
   margin-bottom: 4px;
 }
 
-.popup-project-buttons li {
+.first-child,
+.last-child {
   background-color: #ff6b00;
   padding: 8px 12px;
   height: 48px;
-}
-
-.popup-project-buttons li:last-child {
-  width: 158px;
-}
-
-.popup-project-buttons li:first-child {
-  width: 129px;
 }
 
 .popup-project-button-icon-1 {
@@ -701,6 +691,14 @@
 
 .popup-project-button-icon-2 {
   margin-left: 9px;
+}
+
+.last-child {
+  width: 158px;
+}
+
+.first-child {
+  width: 129px;
 }
 
 .popup-close {
@@ -1105,10 +1103,12 @@
     line-height: 52px;
     text-align: left;
   }
+
   .popup-container {
     width: 80%;
     margin-right: 20%;
   }
+
   .project-more {
     display: grid;
     grid-template-columns: 55% auto;
