@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.body {
+  position: relative;
+}
+
 .header-class {
   background-color: #3c3a39;
   color: white;
@@ -552,11 +556,6 @@
   display: none;
 }
 
-.project-block:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-
 .social-media_icons li:hover {
   transform: scale(1.3);
   transition: 0.5s;
@@ -599,6 +598,7 @@
   margin-right: 4%;
   overflow: scroll;
 }
+
 .popup-project-more-details p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -606,6 +606,7 @@
   line-height: 24px;
   text-align: left;
 }
+
 .project-header {
   display: grid;
   grid-auto-flow: column;
@@ -614,14 +615,16 @@
   margin-right: auto;
   margin-top: 5%;
 }
+
 .project-title-popup {
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   text-align: left;
-  color: #172B4D;
+  color: #172b4d;
 }
+
 .popup-project-img {
   /* max-width: 311px;
   max-height: 220px; */
@@ -630,19 +633,22 @@
   padding: 20px;
   margin-top: 20px;
 }
+
 .project-technology-popup {
   display: flex;
   flex-direction: row;
   gap: 7px;
   list-style: none;
 }
+
 .project-technology-popup li a {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   line-height: 16px;
-  color: #3C3A39;
+  color: #3c3a39;
   text-decoration: none;
 }
+
 .project-btn-pop {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -653,6 +659,7 @@
   text-align: center;
   padding: 8px 12px;
 }
+
 .popup-project-buttons {
   display: flex;
   flex-direction: row;
@@ -661,6 +668,7 @@
   align-items: center;
   margin-top: 15px;
 }
+
 .popup-project-buttons li a {
   text-decoration: none;
   color: #fff;
@@ -673,32 +681,40 @@
   padding-top: 2px;
   margin-bottom: 4px;
 }
+
 .popup-project-buttons li {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   padding: 8px 12px;
   height: 48px;
 }
+
 .popup-project-buttons li:last-child {
   width: 158px;
 }
+
 .popup-project-buttons li:first-child {
   width: 129px;
 }
+
 .popup-project-button-icon-1 {
   padding: 2px;
   margin-left: 9px;
 }
+
 .popup-project-button-icon-2 {
   margin-left: 9px;
 }
+
 .popup-close {
-  color: #67798E;
+  color: #67798e;
   padding: 10px;
   margin-left: auto;
 }
+
 .hidden {
   display: none;
 }
+
 .overlay {
   position: fixed;
   width: 100%;
@@ -714,7 +730,7 @@
 
 @media (min-width: 1350px) {
   .bars,
-  .fa-close {
+  .fa-close-icon {
     display: none;
   }
 
@@ -1093,11 +1109,39 @@
     line-height: 52px;
     text-align: left;
   }
+  .popup-container {
+    width: 80%;
+    margin-right: 20%;
+  }
+  .project-more {
+    display: grid;
+    grid-template-columns: 55% auto;
+    gap: 10px;
+  }
+
+  .popup-project-img {
+    width: 100%;
+    height: auto;
+    object-fit: s;
+  }
+
+  .project-details-popup {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 50px;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    width: 90%;
+  }
 }
 
 @media (max-width: 1350px) {
   body {
     overflow-x: hidden;
+    z-index: 1;
   }
 
   .menu {
@@ -1139,7 +1183,7 @@
     transform: translate(0%);
   }
 
-  .fa-close {
+  .fa-close-icon {
     width: 24px;
     height: 24px;
     margin-top: 10%;
