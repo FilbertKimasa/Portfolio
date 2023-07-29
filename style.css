@@ -577,6 +577,141 @@
   width: 100%;
 }
 
+.project-details-popup {
+  box-sizing: border-box;
+  top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 2%;
+  /* margin-top: 1%; */
+  background-color: #fff;
+  width: 90%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid red;
+  max-height: 95vh;
+  z-index: 3;
+  justify-content: center;
+  align-self: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  overflow: scroll;
+}
+.popup-project-more-details p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.project-header {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  /* gap: 5%; */
+  margin-right: auto;
+  margin-top: 5%;
+}
+.project-title-popup {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  color: #172B4D;
+}
+.popup-project-img {
+  /* max-width: 311px;
+  max-height: 220px; */
+  width: 100%;
+  padding-right: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.project-technology-popup {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  list-style: none;
+}
+.project-technology-popup li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+  color: #3C3A39;
+  text-decoration: none;
+}
+.project-btn-pop {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  border: 1px solid #979493;
+  height: 360px;
+  text-align: center;
+  padding: 8px 12px;
+}
+.popup-project-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  list-style: none;
+  align-items: center;
+  margin-top: 15px;
+}
+.popup-project-buttons li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 2px;
+  margin-bottom: 4px;
+}
+.popup-project-buttons li {
+  background-color: #FF6B00;
+  padding: 8px 12px;
+  height: 48px;
+}
+.popup-project-buttons li:last-child {
+  width: 158px;
+}
+.popup-project-buttons li:first-child {
+  width: 129px;
+}
+.popup-project-button-icon-1 {
+  padding: 2px;
+  margin-left: 9px;
+}
+.popup-project-button-icon-2 {
+  margin-left: 9px;
+}
+.popup-close {
+  color: #67798E;
+  padding: 10px;
+  margin-left: auto;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #979493;
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  opacity: 0.2;
+}
+
 @media (min-width: 1350px) {
   .bars,
   .fa-close {
