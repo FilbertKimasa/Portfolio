@@ -578,6 +578,41 @@
   width: 100%;
 }
 
+/*mobile popup window*/
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 15px 25px 15px;
+}
+
+.popup-header {
+  display: grid;
+  grid-template-columns: 90% 30%;
+}
+
+.project-technologies-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+}
+
+.more-project-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.popup-image {
+  width: 100%;
+}
+
 @media (min-width: 1350px) {
   .bars,
   .fa-close {
