@@ -5,6 +5,7 @@
 }
 
 .header-class {
+  position: fixed;
   background-color: #3c3a39;
   color: white;
   display: flex;
