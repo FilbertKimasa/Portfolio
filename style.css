@@ -581,6 +581,7 @@
 /*mobile popup window*/
 
 .popup-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 25px 15px 25px 15px;
