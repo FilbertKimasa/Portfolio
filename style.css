@@ -586,26 +586,31 @@
   margin: 25px 15px 25px 15px;
   padding: 25px 15px 25px 15px;
   gap: 30px;
+  background-color: #fff;
   border: 1px solid red;
 }
 
 .popup-header {
-  display: grid;
-  grid-template-columns: 90% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .project-technologies-1 {
-  display: flex;
-  flex-direction: row;
+  height: 50%;
   gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .project-details-1 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 }
+
 .more-project-details {
   display: flex;
   flex-direction: column;
@@ -616,6 +621,7 @@
   display: flex;
   flex-direction: row;
   list-style: none;
+  flex-wrap: wrap;
   gap: 6%;
   min-width: 332px;
 }
@@ -625,18 +631,6 @@
 }
 
 .project-links li a {
-  /* text-decoration: none;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  background-color: #ff6b00;
-  height: 24px;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  padding: 20px 5px 10px 5px; */
-
   align-items: center;
   text-decoration: none;
   background: #ff6b00;
@@ -683,12 +677,12 @@
 }
 
 .project-technologies-1 {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   gap: 10px;
   margin: 0 auto 0 0;
   list-style: none;
-  color: #3c3a39;
+  color: #3c3a39; */
 }
 
 .pop-project-btn {
@@ -696,14 +690,16 @@
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
+  height: 36px;
   text-align: center;
-  padding: 10px 12px;
+  padding: 8px;
   border: 1px solid #979493;
   font-size: 15px;
   background-color: #fff;
   text-decoration: none;
   color: #3c3a39;
+  white-space: normal;
+  align-self: start;
 }
 
 .more-project-details p {
@@ -1101,19 +1097,23 @@
   /* desktop popup */
   .project-details-1 {
     display: grid;
-    /* grid-auto-flow: column; */
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 38%;
+    gap: 2%;
   }
 
   .more-project-details {
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-rows: 88% 12%;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .popup-container {
-    width: 75%;
-    /* sel */
+    flex-direction: column;
+    margin: 13% 13% 10% 13%;
+    padding: 2% 2% 2% 2%;
+    gap: 10px;
+    border: 1px solid red;
   }
 }
 
