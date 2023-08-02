@@ -69,39 +69,7 @@ if (portfolio) {
       projectDiv = document.createElement('div');
 
       projectDiv.classList.add('project', 'project-block');
-      projectDiv.innerHTML = `  <h3 class="project-title">${recentProjects[1].name}</h3>
-            <p class="project-details">
-             ${recentProjects[1].description}
-            </p>
-            <ul class="project-technology">
-              <li>
-                <a
-                  href="https://html.com/"
-                  class="project-btn project-btn-1 active-btn-effect hover-btn-effect"
-                >
-                  ${recentProjects[1].workStack[0]}</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://getbootstrap.com/"
-                  class="project-btn project-btn-2 active-btn-effect hover-btn-effect"
-                  > ${recentProjects[1].workStack[1]}</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.ruby-lang.org/en/"
-                  class="project-btn project-btn-3 active-btn-effect hover-btn-effect"
-                  > ${recentProjects[1].workStack[2]}</a
-                >
-              </li>
-            </ul>
-            <a
-              href="#0"
-              class="see-project-btn active-btn-effect hover-btn-effect pop"
-              >See project</a
-            >`;
+      projectDiv.innerHTML = `  `;
       // projectsWrapperDiv.appendChild(projectDiv);
     }
   }
