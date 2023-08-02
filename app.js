@@ -35,50 +35,10 @@ const recentProjects = [
     name: 'Multi-Post Stories',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: './images/Img Placeholder-p1.png',
-    workStack: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-  },
-  {
-    name: 'Profesional Art Printing Data',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    workStack: ['HTML', 'CSS', 'Bootstrap'],
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    workStack: ['HTML', 'Bootstrap', 'Ruby'],
-  },
-  {
-    name: 'Profesional Art Printing Data More',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    workStack: ['HTML', 'Bootstrap', 'Ruby'],
-  },
-  {
-    name: 'Website Portfolio',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    workStack: ['HTML', 'Bootstrap', 'Ruby'],
-  },
-  {
-    name: 'Profesional Art Printing Data More',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    workStack: ['HTML', 'Bootstrap', 'Ruby'],
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    workStack: ['HTML', 'Bootstrap', 'Ruby'],
-  },
-  {
-    name: 'Website Portfolio',
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    workStack: ['HTML', 'Bootstrap', 'Rub000y'],
+    featuredImage: './images/Img Placeholder-p1.png',
+    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    liveVersion: '',
+    source: '',
   },
 ];
 
@@ -93,7 +53,7 @@ if (portfolio) {
     'project-block'
   );
 
-  img.setAttribute('src', `${recentProjects[0].image}`);
+  img.setAttribute('src', `${recentProjects[0].featuredImage}`);
   img.setAttribute('alt', 'recent work');
   img.classList.add('recent-image');
   div.classList.add('most-recent-work-project-details-waraper');
@@ -142,7 +102,7 @@ if (portfolio) {
               class="see-project-btn active-btn-effect hover-btn-effect pop"
               >See project</a
             >`;
-      projectsWrapperDiv.appendChild(projectDiv);
+      // projectsWrapperDiv.appendChild(projectDiv);
     }
   }
 
