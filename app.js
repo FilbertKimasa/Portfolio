@@ -57,7 +57,53 @@ if (portfolio) {
   img.setAttribute('alt', 'recent work');
   img.classList.add('recent-image');
   div.classList.add('most-recent-work-project-details-waraper');
-  div.innerHTML = ``;
+  div.innerHTML = `<h3 class="recent">Multi-Post Stories</h3>
+  <p class="recent-project-details">
+    A daily selection of privately personalized reads; no accounts or
+    sign-ups required. has been the industry's standard dummy text
+    ever since the 1500s, when an unknown printer took a standard
+    dummy text.
+  </p>
+  <ul class="recent-buttons-container">
+    <li>
+      <a
+        href="https://www.w3.org/Style/CSS/"
+        class="recent-button active-btn-effect hover-btn-effect"
+        id="recent-button-1"
+        >CSS</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://html.com/"
+        class="recent-button active-btn-effect hover-btn-effect"
+        id="recent-button-2"
+        >HTML</a
+      >
+    </li>
+    <li>
+      <a
+        href="
+https://getbootstrap.com/"
+        class="recent-button active-btn-effect hover-btn-effect"
+        id="recent-button-3"
+        >Bootstrap</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.ruby-lang.org/en/"
+        class="recent-button active-btn-effect hover-btn-effect"
+        id="recent-button-4"
+        >Ruby</a
+      >
+    </li>
+  </ul>
+  <a
+    href=""
+    class="btn-see-project active-btn-effect hover-btn-effect"
+    >See project</a
+  >`;
   mostRecentProjectWrapper.appendChild(img);
   mostRecentProjectWrapper.appendChild(div);
   portfolio.appendChild(mostRecentProjectWrapper);
