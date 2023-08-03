@@ -28,10 +28,12 @@ const portfolio = document.getElementById('recent-works');
 const projectsWrapperDiv = document.createElement('div');
 const mostRecentProjectWrapper = document.createElement('div');
 const descktopProjectsWrapperDiv = document.createElement('div');
+const popupWraper = document.querySelector('.popup-wraper');
 let projectDiv;
 
 const recentProjects = [
   {
+    index: '0',
     name: 'Multi-Post Stories',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
@@ -40,12 +42,61 @@ const recentProjects = [
     liveVersion: '',
     source: '',
   },
+  {
+    index: '1',
+    name: 'Data Dashboard Healthcare',
+    description:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    featuredImage: './images/Img Placeholder-p1.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    liveVersion: '',
+    source: '',
+  },
+  {
+    index: '2',
+    name: 'Profesional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    featuredImage: 'images/Icon-github-white.png',
+    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    liveVersion: '',
+    source: '',
+  },
+  {
+    index: '3',
+    name: 'Website Portfolio',
+    description:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    featuredImage: 'images/Icon-github-white.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    liveVersion: '',
+    source: '',
+  },
+  {
+    index: '4',
+    name: 'Profesional Art Printing Data More',
+    description:
+      " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    featuredImage: 'images/Icon-github-white.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    liveVersion: '',
+    source: '',
+  },
+  {
+    index: '5',
+    name: 'Profesional Art Printing Data',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    featuredImage: 'images/Icon-github-white.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveVersion: '',
+    source: '',
+  },
 ];
 
 if (portfolio) {
   const div = document.createElement('div');
   const img = document.createElement('img');
-  div.classList.add();
   projectsWrapperDiv.classList.add('recent-project-wraper', 'project-block');
   mostRecentProjectWrapper.classList.add('most-recent-project-wraper');
   descktopProjectsWrapperDiv.classList.add(
@@ -56,7 +107,8 @@ if (portfolio) {
   img.setAttribute('src', `${recentProjects[0].featuredImage}`);
   img.setAttribute('alt', 'recent work');
   img.classList.add('recent-image');
-  div.classList.add('most-recent-work-project-details-waraper');
+  div.classList.add('most-recent-work-project-details-waraper', 'most');
+  div.setAttribute('id', `${0}`);
   div.innerHTML = `<h3 class="recent">Multi-Post Stories</h3>
   <p class="recent-project-details">
     A daily selection of privately personalized reads; no accounts or
@@ -100,8 +152,8 @@ https://getbootstrap.com/"
     </li>
   </ul>
   <a
-    href=""
-    class="btn-see-project active-btn-effect hover-btn-effect"
+    href="#0"
+    class="btn-see-project active-btn-effect hover-btn-effect pop"
     >See project</a
   >`;
   mostRecentProjectWrapper.appendChild(img);
@@ -110,32 +162,78 @@ https://getbootstrap.com/"
   portfolio.appendChild(projectsWrapperDiv);
   portfolio.appendChild(descktopProjectsWrapperDiv);
 
-  for (let i = 0; i < 6; i += 1) {
+  for (let i = 1; i < 6; i += 1) {
     if (projectsWrapperDiv) {
       projectDiv = document.createElement('div');
 
-      projectDiv.classList.add('project', 'project-block');
-      projectDiv.innerHTML = `  `;
-      // projectsWrapperDiv.appendChild(projectDiv);
+      projectDiv.classList.add('project', 'project-block', 'most');
+      projectDiv.setAttribute('id', `${2}`);
+      projectDiv.innerHTML = `  <h3 class="project-title">Profesional Art Printing Data</h3>
+            <p class="project-details">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Has been the industry's standard.
+            </p>
+            <ul class="project-technology">
+              <li>
+                <a
+                  href="https://html.com/"
+                  class="project-btn project-btn-1 active-btn-effect hover-btn-effect"
+                >
+                  HTML</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://getbootstrap.com/"
+                  class="project-btn project-btn-2 active-btn-effect hover-btn-effect"
+                  >Bootstrap</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ruby-lang.org/en/"
+                  class="project-btn project-btn-3 active-btn-effect hover-btn-effect"
+                  >Ruby</a
+                >
+              </li>
+            </ul>
+            <a
+              href="#0"
+              class="see-project-btn active-btn-effect hover-btn-effect pop"
+              >See project</a
+            >`;
+      projectsWrapperDiv.appendChild(projectDiv);
     }
   }
 
-  for (let i = 2; i < 9; i += 1) {
+  for (let i = 2; i < 8; i += 1) {
     let desktopProjectDiv;
     desktopProjectDiv += i;
     desktopProjectDiv = document.createElement('div');
     if (i === 2) {
-      desktopProjectDiv.classList.add('project', 'project-block');
+      desktopProjectDiv.classList.add(
+        'project',
+        'project-block',
+        'pop',
+        'most'
+      );
+      desktopProjectDiv.setAttribute('id', `${'5'}`);
       desktopProjectDiv.innerHTML = `<a
               href="#0"
               class="see-project-btn active-btn-effect hover-btn-effect pop"
               >See project</a
             >`;
     } else if (i === 3 || i === 6) {
-      desktopProjectDiv.classList.add('project-2', 'project-block');
-      desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[2].name}</h3>
+      desktopProjectDiv.classList.add(
+        'project-2',
+        'project-block',
+        'pop',
+        'most'
+      );
+      desktopProjectDiv.setAttribute('id', `${'1'}`);
+      desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[1].name}</h3>
             <p class="project-details">
-             ${recentProjects[2].description}
+             ${recentProjects[1].description}
             </p>
             <ul class="project-technology">
               <li>
@@ -143,29 +241,35 @@ https://getbootstrap.com/"
                   href="https://html.com/"
                   class="project-btn project-btn-1 active-btn-effect hover-btn-effect"
                 >
-                  ${recentProjects[2].workStack[0]}</a
+                  ${recentProjects[1].technologies[0]}</a
                 >
               </li>
               <li>
                 <a
                   href="https://getbootstrap.com/"
                   class="project-btn project-btn-2 active-btn-effect hover-btn-effect"
-                  >${recentProjects[2].workStack[1]}</a
+                  >${recentProjects[1].technologies[1]}</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.ruby-lang.org/en/"
                   class="project-btn project-btn-3 active-btn-effect hover-btn-effect"
-                  >${recentProjects[2].workStack[2]}</a
+                  >${recentProjects[1].technologies[2]}</a
                 >
               </li>
             </ul>`;
     } else if (i === 4 || i === 7) {
-      desktopProjectDiv.classList.add('project-3', 'project-block');
-      desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[4].name}</h3>
+      desktopProjectDiv.classList.add(
+        'project-3',
+        'project-block',
+        'pop',
+        'most'
+      );
+      desktopProjectDiv.setAttribute('id', `${'3'}`);
+      desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[3].name}</h3>
             <p class="project-details">
-              ${recentProjects[4].description}
+              ${recentProjects[3].description}
             </p>
             <ul class="project-technology">
               <li>
@@ -173,29 +277,35 @@ https://getbootstrap.com/"
                   href="https://html.com/"
                   class="project-btn project-btn-1 active-btn-effect hover-btn-effect"
                 >
-                  ${recentProjects[4].workStack[0]}</a
+                  ${recentProjects[3].technologies[0]}</a
                 >
               </li>
               <li>
                 <a
                   href="https://getbootstrap.com/"
                   class="project-btn project-btn-2 active-btn-effect hover-btn-effect"
-                  > ${recentProjects[4].workStack[1]}</a
+                  > ${recentProjects[3].technologies[1]}</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.ruby-lang.org/en/"
                   class="project-btn project-btn-3 active-btn-effect hover-btn-effect"
-                  > ${recentProjects[4].workStack[2]}</a
+                  > ${recentProjects[3].technologies[3]}</a
                 >
               </li>
             </ul>`;
     } else if (i === 5) {
-      desktopProjectDiv.classList.add('project-3', 'project-block');
-      desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[5].name}</h3>
+      desktopProjectDiv.classList.add(
+        'project-3',
+        'project-block',
+        'pop',
+        'most'
+      );
+      desktopProjectDiv.setAttribute('id', `${'4'}`);
+      desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[4].name}</h3>
             <p class="project-details">
-             ${recentProjects[5].description}
+             ${recentProjects[4].description}
             </p>
             <ul class="project-technology">
               <li>
@@ -203,21 +313,21 @@ https://getbootstrap.com/"
                   href="https://html.com/"
                   class="project-btn project-btn-1 active-btn-effect hover-btn-effect"
                 >
-                  ${recentProjects[5].workStack[0]}</a
+                  ${recentProjects[4].technologies[0]}</a
                 >
               </li>
               <li>
                 <a
                   href="https://getbootstrap.com/"
                   class="project-btn project-btn-2 active-btn-effect hover-btn-effect"
-                  >${recentProjects[5].workStack[1]}</a
+                  >${recentProjects[4].technologies[1]}</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.ruby-lang.org/en/"
                   class="project-btn project-btn-3 active-btn-effect hover-btn-effect"
-                  >${recentProjects[5].workStack[2]}</a
+                  >${recentProjects[4].technologies[2]}</a
                 >
               </li>
             </ul>
@@ -230,13 +340,234 @@ https://getbootstrap.com/"
   }
 }
 
+// let index = recentProjects[2].index;
+// console.log(parseInt(index));
 // portfolio end
 
 // popup start
+const mostRecentProject = document.querySelector('.btn-see-project');
+if (mostRecentProject) {
+  mostRecentProject.addEventListener('click', (e) => {
+    const id = e.target.closest('.most').id;
+    // console.log(id);
+    for (let i = 0; i < recentProjects.length; i += 1) {
+      if (recentProjects[i].index === id) {
+        const popupPage = document.createElement('div');
+        const overlay = document.createElement('div');
+        popupPage.classList.add('popup-container');
+        overlay.classList.add('overlay');
+        popupPage.innerHTML = `<div class="popup-header">
+        <div class="project-name">Multi Post Stories</div>
+        <div><i class="fa fa-close close-button"></i></div>
+      </div>
+      <ul class="project-technologies-1">
+        <li><button href="#0" class="pop-project-btn">HTML</button></li>
+        <li><button href="#0" class="pop-project-btn">Bootstrap</button></li>
+        <li>
+          <button href="#0" class="pop-project-btn">Ruby on rails</button>
+        </li>
+      </ul>
+      <div class="project-details-1">
+        <div>
+          <img
+            src="images/Snapshoot Portfolio.png"
+            alt=""
+            class="popup-image"
+          />
+        </div>
+        <div class="more-project-details">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it 1960s. Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it 1960s with the releax
+            map lapora verita.
+          </p>
+          <ul class="project-links">
+            <li>
+              <a href="" class="active-btn-effect hover-btn-effect"
+                >See live<img src="images/live-icon.png" class="link-icons"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="active-btn-effect hover-btn-effect"
+                >See source
+                <img src="images/Icon-github-white.png" class="link-icons"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>`;
 
-// const modal = document.querySelector('.project-details-popup');
+        popupWraper.appendChild(popupPage);
+        popupWraper.appendChild(overlay);
+
+        const closeButton = popupPage.querySelector('.close-button');
+        closeButton.addEventListener('click', () => {
+          popupWraper.removeChild(popupPage);
+          popupWraper.removeChild(overlay);
+        });
+      }
+    }
+    // console.log(id);
+  });
+}
+// other cards
+const portfolioItems = document.querySelectorAll('.see-project-btn');
+if (portfolioItems) {
+  portfolioItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      // const id = e.target.closest('.most').id;
+      for (let i = 0; i < recentProjects.length; i += 1) {
+        if (recentProjects[i].index === id) {
+          // console.log(recentProjects[i].name);
+          const popupPage = document.createElement('div');
+          const overlay = document.createElement('div');
+          popupPage.classList.add('popup-container');
+          overlay.classList.add('overlay');
+          popupPage.innerHTML = `<div class="popup-header">
+        <div class="project-name">Multi Post Stories</div>
+        <div><i class="fa fa-close close-button"></i></div>
+      </div>
+      <ul class="project-technologies-1">
+        <li><button href="#0" class="pop-project-btn">HTML</button></li>
+        <li><button href="#0" class="pop-project-btn">Bootstrap</button></li>
+        <li>
+          <button href="#0" class="pop-project-btn">Ruby on rails</button>
+        </li>
+      </ul>
+      <div class="project-details-1">
+        <div>
+          <img
+            src="images/Snapshoot Portfolio.png"
+            alt=""
+            class="popup-image"
+          />
+        </div>
+        <div class="more-project-details">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it 1960s. Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it 1960s with the releax
+            map lapora verita.
+          </p>
+          <ul class="project-links">
+            <li>
+              <a href="" class="active-btn-effect hover-btn-effect"
+                >See live<img src="images/live-icon.png" class="link-icons"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="active-btn-effect hover-btn-effect"
+                >See source
+                <img src="images/Icon-github-white.png" class="link-icons"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>`;
+
+          popupWraper.appendChild(popupPage);
+          popupWraper.appendChild(overlay);
+
+          const closeButton = popupPage.querySelector('.close-button');
+          closeButton.addEventListener('click', () => {
+            popupWraper.removeChild(popupPage);
+            popupWraper.removeChild(overlay);
+          });
+        }
+      }
+      // console.log(id);
+    });
+  });
+}
+
+// descktop cards
+const desktopCards = document.querySelectorAll('.pop');
+if (desktopCards) {
+  desktopCards.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      const id = e.target.closest('.most').id;
+      for (let i = 0; i < recentProjects.length; i += 1) {
+        if (recentProjects[i].index === id) {
+          // console.log(recentProjects[i].name);
+          const popupPage = document.createElement('div');
+          const overlay = document.createElement('div');
+          popupPage.classList.add('popup-container');
+          overlay.classList.add('overlay');
+          popupPage.innerHTML = `<div class="popup-header">
+        <div class="project-name">Multi Post Stories</div>
+        <div><i class="fa fa-close close-button"></i></div>
+      </div>
+      <ul class="project-technologies-1">
+        <li><button href="#0" class="pop-project-btn">HTML</button></li>
+        <li><button href="#0" class="pop-project-btn">Bootstrap</button></li>
+        <li>
+          <button href="#0" class="pop-project-btn">Ruby on rails</button>
+        </li>
+      </ul>
+      <div class="project-details-1">
+        <div>
+          <img
+            src="images/Snapshoot Portfolio.png"
+            alt=""
+            class="popup-image"
+          />
+        </div>
+        <div class="more-project-details">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it 1960s. Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it 1960s with the releax
+            map lapora verita.
+          </p>
+          <ul class="project-links">
+            <li>
+              <a href="" class="active-btn-effect hover-btn-effect"
+                >See live<img src="images/live-icon.png" class="link-icons"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="active-btn-effect hover-btn-effect"
+                >See source
+                <img src="images/Icon-github-white.png" class="link-icons"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>`;
+
+          popupWraper.appendChild(popupPage);
+          popupWraper.appendChild(overlay);
+
+          const closeButton = popupPage.querySelector('.close-button');
+          closeButton.addEventListener('click', () => {
+            popupWraper.removeChild(popupPage);
+            popupWraper.removeChild(overlay);
+          });
+        }
+      }
+      // console.log(id);
+    });
+  });
+}
+// const
+// console.log(popupPage);
+// modal = document.querySelector('.popup-container');
 // const overlay = document.querySelector('.overlay');
 // const openModalBtn = document.querySelectorAll('.pop');
+// const projectCard = document.querySelectorAll('.pop');
 
 // overlay.classList.add('hidden');
 // const popupContainer = document.getElementById('project-details-popup');
@@ -311,6 +642,7 @@ https://getbootstrap.com/"
 //     </div>`;
 
 // // open modal function
+
 // const openModal = () => {
 //   modal.classList.remove('hidden');
 //   overlay.classList.remove('hidden');
@@ -329,15 +661,24 @@ https://getbootstrap.com/"
 //   }
 // });
 
+// // open modal on button click
+
 // openModalBtn.forEach((item) => {
 //   item.addEventListener('click', openModal);
 // });
 
-// if (document.getElementById('close-x') !== null) {
-//   const closeModalBtn = document.getElementById('close-x');
+// openModalBtn.forEach((item) => {
+//   item.addEventListener('click', openModal);
+// });
+
+// projectCard.forEach((card) => {
+//   card.addEventListener('click', openModal);
+// });
+
+// if (document.querySelector('.close-button') !== null) {
+//   const closeModalBtn = document.querySelector('.close-button');
 
 //   // close the modal when the close button and overlay is clicked
 //   closeModalBtn.addEventListener('click', closeModal);
-//   overlay.addEventListener('click', closeModal);
 // }
-// // popup end
+// // // popup end
