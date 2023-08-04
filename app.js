@@ -49,7 +49,7 @@ const recentProjects = [
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featuredImage: './images/Img Placeholder-p1.png',
+    featuredImage: './images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
     source: '',
@@ -61,7 +61,7 @@ const recentProjects = [
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featuredImage: './images/Img Placeholder-p1.png',
+    featuredImage: './images/Snapshoot Portfolio.png',
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
     source: '',
@@ -73,7 +73,7 @@ const recentProjects = [
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featuredImage: './images/Img Placeholder-p1.png',
+    featuredImage: './images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
     source: '',
@@ -85,7 +85,7 @@ const recentProjects = [
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featuredImage: './images/Img Placeholder-p1.png',
+    featuredImage: './images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
     source: '',
@@ -97,7 +97,7 @@ const recentProjects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featuredImage: './images/Img Placeholder-p1.png',
+    featuredImage: './images/Snapshoot Portfolio.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     liveVersion: '',
     source: '',
@@ -292,7 +292,7 @@ https://getbootstrap.com/"
                 <a
                   href="https://www.ruby-lang.org/en/"
                   class="project-btn project-btn-3 active-btn-effect hover-btn-effect"
-                  > ${recentProjects[3].technologies[3]}</a
+                  > ${recentProjects[3].technologies[2]}</a
                 >
               </li>
             </ul>`;
