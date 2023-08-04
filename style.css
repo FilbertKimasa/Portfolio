@@ -589,10 +589,11 @@
   background-color: #fff;
   position: fixed;
   top: 25px;
-  left: 12px;
-  right: 12px;
+  left: 5%;
+  right: 5%;
   z-index: 6;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .popup-header {
