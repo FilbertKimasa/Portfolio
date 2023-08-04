@@ -8,7 +8,6 @@ const navSlide = () => {
     nav.classList.add('nav-active');
     body.classList.add('overflow-hiden');
   });
-
   navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       navLinks.forEach(() => nav.classList.remove('nav-active'));
@@ -23,7 +22,6 @@ const navSlide = () => {
 navSlide();
 
 // portifolio begin
-
 const portfolio = document.getElementById('recent-works');
 const projectsWrapperDiv = document.createElement('div');
 const mostRecentProjectWrapper = document.createElement('div');
@@ -113,7 +111,6 @@ if (portfolio) {
   mostRecentProjectWrapper.classList.add('most-recent-project-wraper');
   descktopProjectsWrapperDiv.classList.add(
     'desktop-recent-project-wraper',
-    'project-block'
   );
 
   img.setAttribute('src', `${recentProjects[0].featuredImage}`);
@@ -232,7 +229,7 @@ https://getbootstrap.com/"
         'project-2',
         'project-block',
         'pop',
-        'most'
+        'most',
       );
       desktopProjectDiv.setAttribute('id', `${'1'}`);
       desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[1].name}</h3>
@@ -268,7 +265,7 @@ https://getbootstrap.com/"
         'project-3',
         'project-block',
         'pop',
-        'most'
+        'most',
       );
       desktopProjectDiv.setAttribute('id', `${'3'}`);
       desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[3].name}</h3>
@@ -304,7 +301,7 @@ https://getbootstrap.com/"
         'project-3',
         'project-block',
         'pop',
-        'most'
+        'most',
       );
       desktopProjectDiv.setAttribute('id', `${'4'}`);
       desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[4].name}</h3>
@@ -344,17 +341,12 @@ https://getbootstrap.com/"
   }
 }
 
-// let index = recentProjects[2].index;
-// console.log(parseInt(index));
-// portfolio end
-
 // popup start
-// most recent
+// most recent card
 const mostRecentProject = document.querySelector('.btn-see-project');
 if (mostRecentProject) {
   mostRecentProject.addEventListener('click', (e) => {
-    const id = e.target.closest('.most').id;
-    // console.log(id);
+    const { id } = e.target.closest('.most');
     for (let i = 0; i < recentProjects.length; i += 1) {
       if (recentProjects[i].index === id) {
         const popupPage = document.createElement('div');
@@ -366,13 +358,7 @@ if (mostRecentProject) {
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-       ${recentProjects[i].technologies
-         .map(
-           (stack) =>
-             `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
-         )
-         .join('')}
-        
+       ${recentProjects[i].technologies.map((stack) => `<li><button class="pop-project-btn">${stack}</button></li>`).join('')}
       </ul>
       <div class="project-details-1">
         <div>
@@ -419,7 +405,6 @@ if (mostRecentProject) {
         });
       }
     }
-    // console.log(id);
   });
 }
 // mobile
@@ -427,10 +412,9 @@ const portfolioItems = document.querySelectorAll('.see-project-btn-1');
 if (portfolioItems) {
   portfolioItems.forEach((item) => {
     item.addEventListener('click', (e) => {
-      const id = e.target.closest('.most').id;
+      const { id } = e.target.closest('.most');
       for (let i = 0; i < recentProjects.length; i += 1) {
         if (recentProjects[i].index === id) {
-          // console.log(recentProjects[i].name);
           const popupPage = document.createElement('div');
           const overlay = document.createElement('div');
           popupPage.classList.add('popup-container');
@@ -440,12 +424,7 @@ if (portfolioItems) {
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-        ${recentProjects[i].technologies
-          .map(
-            (stack) =>
-              `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
-          )
-          .join('')}
+        ${recentProjects[i].technologies.map((stack) => `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`).join('')}
       </ul>
       <div class="project-details-1">
         <div>
@@ -492,7 +471,6 @@ if (portfolioItems) {
           });
         }
       }
-      // console.log(id);
     });
   });
 }
@@ -502,10 +480,9 @@ const desktopCards = document.querySelectorAll('.pop');
 if (desktopCards) {
   desktopCards.forEach((card) => {
     card.addEventListener('click', (e) => {
-      const id = e.target.closest('.most').id;
+      const { id } = e.target.closest('.most');
       for (let i = 0; i < recentProjects.length; i += 1) {
         if (recentProjects[i].index === id) {
-          // console.log(recentProjects[i].name);
           const popupPage = document.createElement('div');
           const overlay = document.createElement('div');
           popupPage.classList.add('popup-container');
@@ -515,12 +492,7 @@ if (desktopCards) {
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-      ${recentProjects[i].technologies
-        .map(
-          (stack) =>
-            `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
-        )
-        .join('')}
+      ${recentProjects[i].technologies.map((stack) => `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`).join('')}
       </ul>
       <div class="project-details-1">
         <div>
