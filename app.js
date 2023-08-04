@@ -37,6 +37,8 @@ const recentProjects = [
     name: 'Multi-Post Stories',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    longDescriptio:
+      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
@@ -47,6 +49,8 @@ const recentProjects = [
     name: 'Data Dashboard Healthcare',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    longDescriptio:
+      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
@@ -77,6 +81,8 @@ const recentProjects = [
     name: 'Profesional Art Printing Data More',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    longDescriptio:
+      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: 'images/Icon-github-white.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
@@ -87,6 +93,8 @@ const recentProjects = [
     name: 'Profesional Art Printing Data',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    longDescriptio:
+      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: 'images/Icon-github-white.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     liveVersion: '',
@@ -97,7 +105,7 @@ const recentProjects = [
 if (portfolio) {
   const div = document.createElement('div');
   const img = document.createElement('img');
-  projectsWrapperDiv.classList.add('recent-project-wraper', 'project-block');
+  projectsWrapperDiv.classList.add('recent-project-wraper');
   mostRecentProjectWrapper.classList.add('most-recent-project-wraper');
   descktopProjectsWrapperDiv.classList.add(
     'desktop-recent-project-wraper',
@@ -153,7 +161,7 @@ https://getbootstrap.com/"
   </ul>
   <a
     href="#0"
-    class="btn-see-project active-btn-effect hover-btn-effect pop"
+    class="btn-see-project active-btn-effect hover-btn-effect"
     >See project</a
   >`;
   mostRecentProjectWrapper.appendChild(img);
@@ -199,7 +207,7 @@ https://getbootstrap.com/"
             </ul>
             <a
               href="#0"
-              class="see-project-btn active-btn-effect hover-btn-effect pop"
+              class="see-project-btn see-project-btn-1 active-btn-effect hover-btn-effect"
               >See project</a
             >`;
       projectsWrapperDiv.appendChild(projectDiv);
@@ -211,12 +219,7 @@ https://getbootstrap.com/"
     desktopProjectDiv += i;
     desktopProjectDiv = document.createElement('div');
     if (i === 2) {
-      desktopProjectDiv.classList.add(
-        'project',
-        'project-block',
-        'pop',
-        'most'
-      );
+      desktopProjectDiv.classList.add('project', 'project-block', 'most');
       desktopProjectDiv.setAttribute('id', `${'5'}`);
       desktopProjectDiv.innerHTML = `<a
               href="#0"
@@ -345,6 +348,7 @@ https://getbootstrap.com/"
 // portfolio end
 
 // popup start
+// most recent
 const mostRecentProject = document.querySelector('.btn-see-project');
 if (mostRecentProject) {
   mostRecentProject.addEventListener('click', (e) => {
@@ -410,17 +414,24 @@ if (mostRecentProject) {
           popupWraper.removeChild(popupPage);
           popupWraper.removeChild(overlay);
         });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            popupWraper.removeChild(popupPage);
+            popupWraper.removeChild(overlay);
+          }
+        });
       }
     }
     // console.log(id);
   });
 }
-// other cards
-const portfolioItems = document.querySelectorAll('.see-project-btn');
+// mobile
+const portfolioItems = document.querySelectorAll('.see-project-btn-1');
 if (portfolioItems) {
   portfolioItems.forEach((item) => {
     item.addEventListener('click', (e) => {
-      // const id = e.target.closest('.most').id;
+      const id = e.target.closest('.most').id;
       for (let i = 0; i < recentProjects.length; i += 1) {
         if (recentProjects[i].index === id) {
           // console.log(recentProjects[i].name);
@@ -481,6 +492,13 @@ if (portfolioItems) {
           closeButton.addEventListener('click', () => {
             popupWraper.removeChild(popupPage);
             popupWraper.removeChild(overlay);
+          });
+
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+              popupWraper.removeChild(popupPage);
+              popupWraper.removeChild(overlay);
+            }
           });
         }
       }
@@ -547,138 +565,29 @@ if (desktopCards) {
           </ul>
         </div>
       </div>`;
-
+          const closeButton = popupPage.querySelector('.close-button');
           popupWraper.appendChild(popupPage);
           popupWraper.appendChild(overlay);
 
-          const closeButton = popupPage.querySelector('.close-button');
           closeButton.addEventListener('click', () => {
             popupWraper.removeChild(popupPage);
             popupWraper.removeChild(overlay);
           });
+
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+              popupWraper.removeChild(popupPage);
+              popupWraper.removeChild(overlay);
+            }
+          });
         }
       }
-      // console.log(id);
+    });
+    const projectTech = document.querySelectorAll('.project-technology');
+    projectTech.forEach((tecList) => {
+      tecList.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
     });
   });
 }
-// const
-// console.log(popupPage);
-// modal = document.querySelector('.popup-container');
-// const overlay = document.querySelector('.overlay');
-// const openModalBtn = document.querySelectorAll('.pop');
-// const projectCard = document.querySelectorAll('.pop');
-
-// overlay.classList.add('hidden');
-// const popupContainer = document.getElementById('project-details-popup');
-// popupContainer.innerHTML = ` <div class="project-header">
-//         <h3 class="project-title-popup">Multi-Post Stories</h3>
-//         <i class="fa fa-close popup-close" id="close-x"></i>
-//       </div>
-//       <div>
-//         <ul class="project-technology-popup">
-//           <li>
-//             <a
-//               href="https://html.com/"
-//               class="project-btn-pop project-btn-1-pop active-btn-effect hover-btn-effect"
-//             >
-//               HTML</a
-//             >
-//           </li>
-//           <li>
-//             <a
-//               href="https://getbootstrap.com/"
-//               class="project-btn-pop project-btn-2 active-btn-effect hover-btn-effect"
-//               >Bootstrap</a
-//             >
-//           </li>
-//           <li>
-//             <a
-//               href="https://www.ruby-lang.org/en/"
-//               class="project-btn-pop project-btn-3 active-btn-effect hover-btn-effect"
-//               >Ruby on Rails</a
-//             >
-//           </li>
-//         </ul>
-//       </div>
-//       <div class="project-more">
-//         <div>
-//           <img
-//             src="images/Snapshoot Portfolio.png"
-//             alt=""
-//             class="popup-project-img"
-//           />
-//         </div>
-
-//         <div class="popup-project-more-details">
-//           <p>
-//             Lorem Ipsum is simply dummy text of the printing and typesetting
-//             industry. Lorem Ipsum has been the industry's standard dummy text
-//             ever since the 1500s, when an unknown printer took a galley of type
-//             and scrambled it to make a type specimen book. It has survived not
-//             only five centuries, but also the leap into electronic typesetting,
-//             remaining essent
-//           </p>
-//           <ul class="popup-project-buttons">
-//             <li class="first-child">
-//               <a href=""
-//                 >See live<img
-//                   src="images/live-Icon.png"
-//                   alt="Live-icon"
-//                   class="popup-project-button-icon-1"
-//               /></a>
-//             </li>
-//             <li class="last-child">
-//               <a href=""
-//                 >See source<img
-//                   src="images/Icon -GitHub-white.png"
-//                   alt="Live-icon"
-//                   class="popup-project-button-icon-2"
-//               /></a>
-//             </li>
-//           </ul>
-//         </div>
-//       </div>
-//     </div>`;
-
-// // open modal function
-
-// const openModal = () => {
-//   modal.classList.remove('hidden');
-//   overlay.classList.remove('hidden');
-// };
-
-// // close modal function
-// const closeModal = () => {
-//   modal.classList.add('hidden');
-//   overlay.classList.add('hidden');
-// };
-
-// // close modal when the Esc key is pressed
-// document.addEventListener('keydown', (e) => {
-//   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-//     closeModal();
-//   }
-// });
-
-// // open modal on button click
-
-// openModalBtn.forEach((item) => {
-//   item.addEventListener('click', openModal);
-// });
-
-// openModalBtn.forEach((item) => {
-//   item.addEventListener('click', openModal);
-// });
-
-// projectCard.forEach((card) => {
-//   card.addEventListener('click', openModal);
-// });
-
-// if (document.querySelector('.close-button') !== null) {
-//   const closeModalBtn = document.querySelector('.close-button');
-
-//   // close the modal when the close button and overlay is clicked
-//   closeModalBtn.addEventListener('click', closeModal);
-// }
-// // // popup end
