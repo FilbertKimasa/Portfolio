@@ -627,8 +627,9 @@
   flex-direction: row;
   list-style: none;
   flex-wrap: wrap;
-  gap: 6%;
+  gap: 5%;
   min-width: 332px;
+  margin-left: auto;
 }
 
 .popup-image {
