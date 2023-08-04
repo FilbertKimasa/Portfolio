@@ -37,7 +37,7 @@ const recentProjects = [
     name: 'Multi-Post Stories',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    longDescriptio:
+    longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
@@ -49,7 +49,7 @@ const recentProjects = [
     name: 'Data Dashboard Healthcare',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    longDescriptio:
+    longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -61,7 +61,9 @@ const recentProjects = [
     name: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: 'images/Icon-github-white.png',
+    longDescription:
+      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
     source: '',
@@ -71,7 +73,9 @@ const recentProjects = [
     name: 'Website Portfolio',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: 'images/Icon-github-white.png',
+    longDescription:
+      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
     source: '',
@@ -81,9 +85,9 @@ const recentProjects = [
     name: 'Profesional Art Printing Data More',
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    longDescriptio:
+    longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featuredImage: 'images/Icon-github-white.png',
+    featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveVersion: '',
     source: '',
@@ -93,9 +97,9 @@ const recentProjects = [
     name: 'Profesional Art Printing Data',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    longDescriptio:
+    longDescription:
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featuredImage: 'images/Icon-github-white.png',
+    featuredImage: './images/Img Placeholder-p1.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     liveVersion: '',
     source: '',
@@ -117,12 +121,9 @@ if (portfolio) {
   img.classList.add('recent-image');
   div.classList.add('most-recent-work-project-details-waraper', 'most');
   div.setAttribute('id', `${0}`);
-  div.innerHTML = `<h3 class="recent">Multi-Post Stories</h3>
+  div.innerHTML = `<h3 class="recent">${recentProjects[0].name}</h3>
   <p class="recent-project-details">
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required. has been the industry's standard dummy text
-    ever since the 1500s, when an unknown printer took a standard
-    dummy text.
+    ${recentProjects[0].description}
   </p>
   <ul class="recent-buttons-container">
     <li>
@@ -361,34 +362,29 @@ if (mostRecentProject) {
         popupPage.classList.add('popup-container');
         overlay.classList.add('overlay');
         popupPage.innerHTML = `<div class="popup-header">
-        <div class="project-name">Multi Post Stories</div>
+        <div class="project-name">${recentProjects[i].name}</div>
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-        <li><button href="#0" class="pop-project-btn">HTML</button></li>
-        <li><button href="#0" class="pop-project-btn">Bootstrap</button></li>
-        <li>
-          <button href="#0" class="pop-project-btn">Ruby on rails</button>
-        </li>
+       ${recentProjects[i].technologies
+         .map(
+           (stack) =>
+             `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
+         )
+         .join('')}
+        
       </ul>
       <div class="project-details-1">
         <div>
           <img
-            src="images/Snapshoot Portfolio.png"
+            src="${recentProjects[i].featuredImage}"
             alt=""
             class="popup-image"
           />
         </div>
         <div class="more-project-details">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it 1960s. Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it 1960s with the releax
-            map lapora verita.
+           ${recentProjects[i].longDescription}
           </p>
           <ul class="project-links">
             <li>
@@ -440,34 +436,28 @@ if (portfolioItems) {
           popupPage.classList.add('popup-container');
           overlay.classList.add('overlay');
           popupPage.innerHTML = `<div class="popup-header">
-        <div class="project-name">Multi Post Stories</div>
+        <div class="project-name">${recentProjects[i].name}</div>
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-        <li><button href="#0" class="pop-project-btn">HTML</button></li>
-        <li><button href="#0" class="pop-project-btn">Bootstrap</button></li>
-        <li>
-          <button href="#0" class="pop-project-btn">Ruby on rails</button>
-        </li>
+        ${recentProjects[i].technologies
+          .map(
+            (stack) =>
+              `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
+          )
+          .join('')}
       </ul>
       <div class="project-details-1">
         <div>
           <img
-            src="images/Snapshoot Portfolio.png"
+            src="${recentProjects[i].featuredImage}"
             alt=""
             class="popup-image"
           />
         </div>
         <div class="more-project-details">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it 1960s. Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it 1960s with the releax
-            map lapora verita.
+            ${recentProjects[i].longDescription}
           </p>
           <ul class="project-links">
             <li>
@@ -521,34 +511,28 @@ if (desktopCards) {
           popupPage.classList.add('popup-container');
           overlay.classList.add('overlay');
           popupPage.innerHTML = `<div class="popup-header">
-        <div class="project-name">Multi Post Stories</div>
+        <div class="project-name">${recentProjects[i].name}</div>
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-        <li><button href="#0" class="pop-project-btn">HTML</button></li>
-        <li><button href="#0" class="pop-project-btn">Bootstrap</button></li>
-        <li>
-          <button href="#0" class="pop-project-btn">Ruby on rails</button>
-        </li>
+      ${recentProjects[i].technologies
+        .map(
+          (stack) =>
+            `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
+        )
+        .join('')}
       </ul>
       <div class="project-details-1">
         <div>
           <img
-            src="images/Snapshoot Portfolio.png"
+            src="${recentProjects[i].featuredImage}"
             alt=""
             class="popup-image"
           />
         </div>
         <div class="more-project-details">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it 1960s. Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it 1960s with the releax
-            map lapora verita.
+           ${recentProjects[i].longDescription}
           </p>
           <ul class="project-links">
             <li>
