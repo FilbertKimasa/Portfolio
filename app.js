@@ -373,12 +373,12 @@ if (mostRecentProject) {
            ${recentProjects[i].longDescription}
           </p>
           <ul class="project-links">
-            <li>
+            <li class="first-child">
               <a href="" class="active-btn-effect hover-btn-effect"
                 >See live<img src="images/live-icon.png" class="link-icons"
               /></a>
             </li>
-            <li>
+            <li class="last-child">
               <a href="" class="active-btn-effect hover-btn-effect"
                 >See source
                 <img src="images/Icon-github-white.png" class="link-icons"
@@ -439,12 +439,12 @@ if (portfolioItems) {
             ${recentProjects[i].longDescription}
           </p>
           <ul class="project-links">
-            <li>
+            <li class="first-child">
               <a href="" class="active-btn-effect hover-btn-effect"
                 >See live<img src="images/live-icon.png" class="link-icons"
               /></a>
             </li>
-            <li>
+            <li class="last-child">
               <a href="" class="active-btn-effect hover-btn-effect"
                 >See source
                 <img src="images/Icon-github-white.png" class="link-icons"
@@ -507,12 +507,12 @@ if (desktopCards) {
            ${recentProjects[i].longDescription}
           </p>
           <ul class="project-links">
-            <li>
+            <li class="first-child">
               <a href="" class="active-btn-effect hover-btn-effect"
                 >See live<img src="images/live-icon.png" class="link-icons"
               /></a>
             </li>
-            <li>
+            <li class="last-child">
               <a href="" class="active-btn-effect hover-btn-effect"
                 >See source
                 <img src="images/Icon-github-white.png" class="link-icons"
