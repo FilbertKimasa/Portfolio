@@ -720,12 +720,6 @@
   z-index: 5;
 }
 
-/* .popup-container {
-  position: fixed;
-  top: 10px;
-  z-index: 6;
-} */
-
 .hidden {
   display: none;
 }
