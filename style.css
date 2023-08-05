@@ -1129,6 +1129,15 @@
   }
 }
 
+#error-message {
+  width: 100%;
+  color: red;
+  font-family: 'Crete Round', serif;
+  text-align: left;
+  font-style: italic;
+  font-size: 12px;
+}
+
 @media (max-width: 1350px) {
   body {
     overflow-x: hidden;
