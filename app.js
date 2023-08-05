@@ -568,3 +568,24 @@ inputEmail.addEventListener('keydown', () => {
 });
 
 // end contact form validation
+
+// saving data in the local storage
+
+const inputName = document.querySelector('.input-name');
+const message = document.querySelector('#text-comment');
+form.addEventListener('keyup', () => {
+  const formData = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+window.onload = () => {
+  const formData = localStorage.getItem('formData');
+  const formDataObject = JSON.parse(formData);
+  inputName.value = formDataObject.name;
+  inputEmail.value = formDataObject.email;
+  message.value = formDataObject.message;
+};
