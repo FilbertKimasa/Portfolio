@@ -552,6 +552,7 @@ if (desktopCards) {
 
 const form = document.querySelector('.contact-form');
 const errorDiv = document.getElementById('error-message');
+const inputEmail = document.querySelector('.input-email')
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.querySelector('.input-email').value;
@@ -561,3 +562,9 @@ form.addEventListener('submit', (e) => {
     errorDiv.innerText = 'The email must be in lowcase';
   }
 });
+
+inputEmail.addEventListener('keydown', () => {
+  errorDiv.innerText = '';
+});
+
+// end contact form validation
