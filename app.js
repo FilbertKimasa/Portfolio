@@ -552,7 +552,7 @@ if (desktopCards) {
 
 const form = document.querySelector('.contact-form');
 const errorDiv = document.getElementById('error-message');
-const inputEmail = document.querySelector('.input-email')
+const inputEmail = document.querySelector('.input-email');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.querySelector('.input-email').value;
