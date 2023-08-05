@@ -581,3 +581,11 @@ form.addEventListener('keyup', () => {
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 });
+
+window.onload = () => {
+  const formData = localStorage.getItem('formData');
+  const formDataObject = JSON.parse(formData);
+  inputName.value = formDataObject.name;
+  inputEmail.value = formDataObject.email;
+  message.value = formDataObject.message;
+};
