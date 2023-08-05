@@ -549,3 +549,15 @@ if (desktopCards) {
 }
 
 // contact form validation
+
+const form = document.querySelector('.contact-form');
+const errorDiv = document.getElementById('error-message');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.querySelector('.input-email').value;
+  if (email === email.toLowerCase()) {
+    form.submit();
+  } else {
+    errorDiv.innerText = 'The email must be in lowcase';
+  }
+});
