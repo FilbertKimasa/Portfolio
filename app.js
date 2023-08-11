@@ -105,7 +105,7 @@ const recentProjects = [
 ];
 
 if (portfolio) {
-  const DIV = document.createElement('div');
+  const div = document.createElement('div');
   const img = document.createElement('img');
   projectsWrapperDiv.classList.add('recent-project-wraper');
   mostRecentProjectWrapper.classList.add('most-recent-project-wraper');
