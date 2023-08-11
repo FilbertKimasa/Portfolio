@@ -105,13 +105,11 @@ const recentProjects = [
 ];
 
 if (portfolio) {
-  const div = document.createElement('div');
+  const DIV = document.createElement('div');
   const img = document.createElement('img');
   projectsWrapperDiv.classList.add('recent-project-wraper');
   mostRecentProjectWrapper.classList.add('most-recent-project-wraper');
-  descktopProjectsWrapperDiv.classList.add(
-    'desktop-recent-project-wraper',
-  );
+  descktopProjectsWrapperDiv.classList.add('desktop-recent-project-wraper');
 
   img.setAttribute('src', `${recentProjects[0].featuredImage}`);
   img.setAttribute('alt', 'recent work');
@@ -229,7 +227,7 @@ https://getbootstrap.com/"
         'project-2',
         'project-block',
         'pop',
-        'most',
+        'most'
       );
       desktopProjectDiv.setAttribute('id', `${'1'}`);
       desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[1].name}</h3>
@@ -265,7 +263,7 @@ https://getbootstrap.com/"
         'project-3',
         'project-block',
         'pop',
-        'most',
+        'most'
       );
       desktopProjectDiv.setAttribute('id', `${'3'}`);
       desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[3].name}</h3>
@@ -301,7 +299,7 @@ https://getbootstrap.com/"
         'project-3',
         'project-block',
         'pop',
-        'most',
+        'most'
       );
       desktopProjectDiv.setAttribute('id', `${'4'}`);
       desktopProjectDiv.innerHTML = `<h3 class="project-title">${recentProjects[4].name}</h3>
@@ -358,7 +356,12 @@ if (mostRecentProject) {
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-       ${recentProjects[i].technologies.map((stack) => `<li><button class="pop-project-btn">${stack}</button></li>`).join('')}
+       ${recentProjects[i].technologies
+         .map(
+           (stack) =>
+             `<li><button class="pop-project-btn">${stack}</button></li>`
+         )
+         .join('')}
       </ul>
       <div class="project-details-1">
         <div>
@@ -424,7 +427,12 @@ if (portfolioItems) {
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-        ${recentProjects[i].technologies.map((stack) => `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`).join('')}
+        ${recentProjects[i].technologies
+          .map(
+            (stack) =>
+              `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
+          )
+          .join('')}
       </ul>
       <div class="project-details-1">
         <div>
@@ -492,7 +500,12 @@ if (desktopCards) {
         <div><i class="fa fa-close close-button"></i></div>
       </div>
       <ul class="project-technologies-1">
-      ${recentProjects[i].technologies.map((stack) => `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`).join('')}
+      ${recentProjects[i].technologies
+        .map(
+          (stack) =>
+            `<li><button href="#0" class="pop-project-btn">${stack}</button></li>`
+        )
+        .join('')}
       </ul>
       <div class="project-details-1">
         <div>
